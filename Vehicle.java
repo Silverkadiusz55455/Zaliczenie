@@ -6,8 +6,20 @@ public class Vehicle  {
     private double vehicleMileage;
     private int wheels;
     private int power;
+    public static final int ADD_POWER= 40;
+    public String name;
 
-    public Vehicle(String producer, String model, double year, double vehicleMileage, int wheels, int power) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Vehicle(String producer, String model, double year,
+                   double vehicleMileage, int wheels, int power) {
+
         this.producer = producer;
         this.model = model;
         this.year = year;
@@ -64,9 +76,11 @@ public class Vehicle  {
         this.power = power;
     }
     public void powerUp(){
-        setPower(getPower()+30);
-
+        setPower(getPower()+ADD_POWER);
     }
 
+    public void giveSound(){
+        System.out.println(name +"robi brrrrr");
+    }
 
 }

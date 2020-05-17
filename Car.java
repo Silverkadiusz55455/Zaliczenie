@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Car extends  Vehicle{
 
     private String CarSteeringWheelPosition;
@@ -36,9 +38,10 @@ public class Car extends  Vehicle{
                 +getCarSteeringWheelPosition()+" stronie.";
     }
 
-    public void AddpowerUp(){
-        System.out.println("Początkowa moc"+ getPower());
-        }
-
-
+    public void brrr(){
+        System.out.println("auto robi brrrrr");
     }
+    public void giveSound(){
+        System.out.println(getName());
+}
+}

@@ -22,5 +22,12 @@ public class Motor extends Vehicle {
                 + ", rok produkcji: " + getYear() + ", przebieg pojazdu: " + getVehicleMileage()
                 + ", liczba kół: " + getWheels() + " moc: " + getPower() + ", lakier fabryczny: " + isFactoryMotorPaint();
     }
+    public void prrr(){
+        System.out.println("motur robi prrrrr");
+    }
+    public void giveSound() {
+        System.out.println(getName() + " robi brrrrrrr");
+
+    }
 }
 
